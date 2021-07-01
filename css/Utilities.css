@@ -1,0 +1,86 @@
+:root {
+  /* Primary Colors */
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --light-moderate: hsl(167, 44%, 70%);
+  /* Primary Colors */
+
+  /* Neutral */
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very--dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+  /* Neutral */
+
+  /* Fonts */
+  --font-family: Arial;
+  --font-regular: 500;
+  --font-bold: 700;
+  --font-sm: 15px;
+  --font-md: 25px;
+  --font-big: 45px;
+  /* Fonts */
+}
+
+/* Remove margin & padding & add box-sizing: border-box  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Add font-family & font-size */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+}
+
+/* Backgrounds */
+.bg-light-moderate {
+  background-color: var(--light-moderate);
+}
+
+.bg-white {
+  background-color: var(--White);
+}
+
+/* Btn */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: var(--font-sm);
+  font-weight: var(--font-bold);
+  border-radius: 35px;
+  border: 0;
+  background-color: var(--White);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+.btn:hover {
+  background: #6ecfff;
+  color: var(--White);
+}
+
+/* Row-reverse */
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
